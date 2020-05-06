@@ -1,6 +1,7 @@
 #!/bin/sh
 
 g++ norm.cpp -o norm
+mkdir workspace
 
 cd liblinear
 make
