@@ -1,6 +1,6 @@
 # Evaluate
 
-It provide a python API to evaluate node embedding on multi-label classification with [LIBLINEAR](https://github.com/cjlin1/liblinear).
+It provide a python API to evaluate node embedding on multi-label classification with [LIBLINEAR](https://github.com/cjlin1/liblinear). 
 
 ## How to run
 
@@ -11,9 +11,14 @@ Run with the following procedures:
 sh make.sh
 ```
 
-2) normalize node embedding:
+2a) normalize node embedding:
 ```bash
 ./norm -input emb.txt -output emb.bin -binary 1
+```
+
+2b) binarize node embedding (without normalization):
+```bash
+./to_binary -input emb.txt -output emb.bin
 ```
 
 Format of emb.txt:
